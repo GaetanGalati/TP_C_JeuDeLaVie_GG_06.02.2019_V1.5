@@ -2,12 +2,22 @@
 #include <stdlib.h>
 #include "GameOfLife_Head.h"
 
+//**********************************************************
+//Description : L'initialisation du tableau.
+//
+//Entrées : le tableau Ntab
+//
+//Sorties :	le tableau Ntab inisialisé (chaque case = 1 OU 0)
+//
+//Note :  Utilisation du random
+//
+//**********************************************************
 void initTab(int nTab[TAILLE][TAILLE])
 {
     int x = 0;
-    int y = 0;
+    int y = 0;//Postion en XY (chaque itération de for)
     int XTabRand = 0;
-    int YTabRand = 0;
+    int YTabRand = 0;//Postion random dans le tableau
 
     for(x = 1; x < TAILLE; x++)
     {
@@ -15,13 +25,23 @@ void initTab(int nTab[TAILLE][TAILLE])
         {
             XTabRand = (rand() % CELL_LIVE_AT_START);
             YTabRand  = (rand() % CELL_LIVE_AT_START);
-            nTab[x][y] = 0;
-            nTab[XTabRand+1][YTabRand+1]= 1;
+            nTab[x][y] = 0;//La cellule en [X] et [Y] prend la valeur 0
+            nTab[XTabRand+1][YTabRand+1]= 1;//Une cellule dans le tableau prend la valeur 1
 
         }
     }
 }
 
+//**********************************************************
+//Description : Génération de chaque cellules
+//
+//Entrées : le tableau Ntab, la cellule et le fichier
+//
+//Sorties :	Affection du tablau et lancement de l'affichage
+//
+//Note :  x
+//
+//**********************************************************
 void genCells(int nTab[TAILLE][TAILLE], tRandom Cell,FILE* fichier)
 {
     for(Cell.nCellX = 1; Cell.nCellX < TAILLE; Cell.nCellX++)
@@ -53,12 +73,22 @@ void genCells(int nTab[TAILLE][TAILLE], tRandom Cell,FILE* fichier)
     }
 }
 
+//**********************************************************
+//Description : Verification de la cellule
+//
+//Entrées : le tableau et une position (tRandom Cell)
+//
+//Sorties :	survive , birth, death
+//
+//Note :  x
+//
+//**********************************************************
 stat verifCells(int nTab[TAILLE][TAILLE], tRandom Cell)
 {
 
-    int nCptLive=0;
-    int nCptDead=8;
-    int nCptBorn=0;
+    int nCptLive=0;//Compteur de cellule en vie au tour de la cellule que l'on vérifie
+    int nCptDead=8;//Compteur de cellule mortes au tour de la cellule que l'on vérifie
+    int nCptBorn=0;//Compteur pour la naiscance
 
     if (Cell.nCellY+1 >= TAILLE)
     {
