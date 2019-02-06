@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1549264447 source:c:\users\skyfu\documents\projetcodeblocks\gameoflife\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	"GameOfLife_Head.h"
+
+1548856597 c:\users\skyfu\documents\projetcodeblocks\gameoflife\gameoflife_head.h
+
+1548697087 source:c:\users\skyfu\documents\projetcodeblocks\gameoflife\galeoflifefoncproc.c
+	<stdio.h>
+	<stdlib.h>
+	"GameOfLife_Head.h"
+
+1548856057 source:c:\users\skyfu\documents\projetcodeblocks\gameoflife\gameoflifefoncproc.c
+	<stdio.h>
+	<stdlib.h>
+	"GameOfLife_Head.h"
+
+1548856057 source:c:\users\skyfu\documents\projetcodeblocks\gameoflife\gameoflifedisplay.c
+	<stdio.h>
+	<stdlib.h>
+	"GameOfLife_Head.h"
+
+1548856057 source:c:\users\utilisateur\desktop\codec\gameoflife\gameoflifedisplay.c
+	<stdio.h>
+	<stdlib.h>
+	"GameOfLife_Head.h"
+
+1548856597 c:\users\utilisateur\desktop\codec\gameoflife\gameoflife_head.h
+
+1548856057 source:c:\users\utilisateur\desktop\codec\gameoflife\gameoflifefoncproc.c
+	<stdio.h>
+	<stdlib.h>
+	"GameOfLife_Head.h"
+
+1549264447 source:c:\users\utilisateur\desktop\codec\gameoflife\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	"GameOfLife_Head.h"
+
